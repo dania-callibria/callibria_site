@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: dania-callibria/calibria-site 
+media_folder: "static/img"
+public_folder: "/img"
+
+collections:
+  - name: "pages"
+    label: "Страницы"
+    files:
+      - name: "home"
+        label: "Главная"
+        file: "content/pages/home.md"
+        fields:
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Описание", name: "description", widget: "text" }
+          - { label: "Фото", name: "image", widget: "image" }
+          - { label: "Видео", name: "video", widget: "string" }
